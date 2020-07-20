@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    tools:context=".MainActivity"
+    android:layout_margin="12dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_zone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/headerTxt"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:fontFamily="casual"
+        android:text="Events App"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:textColor="#009688"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/button_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/openTeachersActivityBtn"
+            style="?android:attr/button"
+            android:layout_width="0dp"
+            android:background="#009688"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:text="@string/view_all"
+            android:layout_margin="16dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>
